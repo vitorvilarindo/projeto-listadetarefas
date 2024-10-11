@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <script src="main.js" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article>
+        <form action="">
+            <h1>Lista de tarefas</h1>
+            <input type="text" name="nome" id="nome" placeholder="Digite o noma da lista">
+            <input type="button" value="Enviar" id="send" onclick="nomeLista()">
+            
+        </form>
+        <h2 id="nome_da_lista">Nome da lista:</h2>
+        <div>
+            <table  >
+                <thead id="cabeçalho">
+                    <tr>
+                        <td>Código</td>
+                        <td>Nome</td>
+                        <td>Descrição</td>
+                    </tr>
+                </thead>
+                <tbody id="tarefa">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <input type="text" name="nome_tarefa" id="nome_tarefa" placeholder="Nome da tarefa">
+            <input type="text" name="descrição" id="descrição" placeholder="Descrição">
+            <input type="button" value="Enviar" id="salvar" onclick="Salvar_tarefa(nome_tarefa.value, descrição.value)">
+        </form>
+    </article>
+    
+</body>
+</html>

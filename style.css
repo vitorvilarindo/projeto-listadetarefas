@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(63, 161, 161);
+}
+
+article {
+    margin: 5%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(14, 66, 66);
+}
+
+h2 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+table {
+    margin: auto;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+#cabeçalho {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(213, 219, 255);
+}
+
+
+#tarefa {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
