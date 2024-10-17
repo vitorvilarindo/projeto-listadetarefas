@@ -30,10 +30,11 @@ function adcionar(nome_tarefa, descrição){
 
     let imgEdit = document.createElement('img');
     imgEdit.src = 'edit.svg'
-    imgEdit.setAttribute("onclick", "produto.deletar()")
+    
 
     let imgDelet = document.createElement('img');
     imgDelet.src = 'delet.png'
+    imgDelet.setAttribute("onclick", "deletar("+qntlinhas+")")
     
     cellAcoes.appendChild(imgEdit);
     cellAcoes.appendChild(imgDelet);
@@ -52,8 +53,14 @@ function Validar(nome_tarefa, descrição) {
    
 }
 
-function deletar(){
-    alert(linha)
+
+function deletar(qntlinhas){
+    let linha = tarefa.deleteRow(qntlinhas);
+    alert(qntlinhas)
+    let bba = '';
+    let ass = ''
+    atualizar()
+    
+
 }
 
-var produto = new produto();
