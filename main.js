@@ -34,7 +34,7 @@ function adcionar(nome_tarefa, descrição){
 
     let imgDelet = document.createElement('img');
     imgDelet.src = 'delet.png'
-    imgDelet.setAttribute("onclick", "deletar("+qntlinhas+")", "atualizar("+qntlinhas+")")
+    imgDelet.setAttribute("onclick", "deletar("+qntlinhas+")","atualizar("+tarefa+")")
     
     cellAcoes.appendChild(imgEdit);
     cellAcoes.appendChild(imgDelet);
@@ -53,23 +53,18 @@ function Validar(nome_tarefa, descrição) {
    
 }
 
-function atualizar(qntlinhas){
-    //let tarefa = document.getElementById("tarefa");
-    //let qntlinhas = tarefa.rows.length;
-    //let linha = tarefa.insertRow(qntlinhas);
-    let cellCodigo = linha.insertCell(0);
-    for (let i = 0; i < qntlinhas; i++){
-        
-        cellCodigo.innerHTML = i;
-    }
-}
-
-
 function deletar(qntlinhas){
-    let linha = tarefa.deleteRow(qntlinhas);
+    let index = qntlinhas.rowIndex
+    tarefa.deleteRow(index);
+
+    let baba = tarefa.rows.length;
+    for (let i = 0; i < baba; i++){
+        let celula = tarefa.rows[i].cells[0];
+        celula.innerHTML = i
+    }
     alert(qntlinhas)
-    atualizar(qntlinhas)
-    
+    alert(tarefa)
+    //atualizar(qntlinhas)
 
 }
 
